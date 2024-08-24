@@ -9,8 +9,10 @@ meme_dict = {
             }
  
 for i in range(5):           
-    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!), o escribe 'SALIR' para terminar: ")
     
+    if word.upper() == 'SALIR':
+        break
     
     if word in meme_dict.keys():
         print(meme_dict[word])
